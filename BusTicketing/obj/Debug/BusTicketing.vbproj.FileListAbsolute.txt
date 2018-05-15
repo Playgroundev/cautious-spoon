@@ -1,0 +1,14 @@
+c:\users\user\documents\visual studio 2015\Projects\BusTicketing\BusTicketing\bin\Debug\BusTicketing.exe.config
+c:\users\user\documents\visual studio 2015\Projects\BusTicketing\BusTicketing\bin\Debug\BusTicketing.exe
+c:\users\user\documents\visual studio 2015\Projects\BusTicketing\BusTicketing\bin\Debug\BusTicketing.pdb
+c:\users\user\documents\visual studio 2015\Projects\BusTicketing\BusTicketing\bin\Debug\BusTicketing.xml
+c:\users\user\documents\visual studio 2015\Projects\BusTicketing\BusTicketing\obj\Debug\BusTicketing.vbprojResolveAssemblyReference.cache
+c:\users\user\documents\visual studio 2015\Projects\BusTicketing\BusTicketing\obj\Debug\BusTicketing.Resources.resources
+c:\users\user\documents\visual studio 2015\Projects\BusTicketing\BusTicketing\obj\Debug\BusTicketing.vbproj.GenerateResource.Cache
+c:\users\user\documents\visual studio 2015\Projects\BusTicketing\BusTicketing\obj\Debug\BusTicketing.exe
+c:\users\user\documents\visual studio 2015\Projects\BusTicketing\BusTicketing\obj\Debug\BusTicketing.xml
+c:\users\user\documents\visual studio 2015\Projects\BusTicketing\BusTicketing\obj\Debug\BusTicketing.pdb
+C:\Users\USER\Documents\Visual Studio 2015\Projects\BusTicketing\BusTicketing\obj\Debug\BusTicketing.FrmLogin.resources
+C:\Users\USER\Documents\Visual Studio 2015\Projects\BusTicketing\BusTicketing\bin\Debug\MySql.Data.dll
+C:\Users\USER\Documents\Visual Studio 2015\Projects\BusTicketing\BusTicketing\bin\Debug\MySql.Data.xml
+C:\Users\USER\Documents\Visual Studio 2015\Projects\BusTicketing\BusTicketing\obj\Debug\BusTicketing.AdminConsole.resources
