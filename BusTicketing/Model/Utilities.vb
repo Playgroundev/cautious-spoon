@@ -5,7 +5,7 @@ Public Class Utilities
     Dim Reader As MySqlDataReader
     Dim Counter As Integer = 0
 
-    Public Function ConnectToDabase() As Boolean
+    Public Function ConnectToDatabase() As Boolean
         Dim Success As Boolean = False
         Try
             Connection = New MySqlConnection
@@ -29,13 +29,13 @@ Public Class Utilities
         End Try
         Return Success
     End Function
-    Function Login(ByVal Username As String, ByVal Password As String) As Boolean
+    Public Function Login(ByVal Username As String, ByVal Password As String) As Boolean
         Dim Success As Boolean = False
         Dim Query As String
         Command = New MySqlCommand
         Try
-            ConnectToDabase()
-            Query = "select * from Visual.users where username = '" & Username & "' AND password = '" & Password & "' "
+            ConnectToDatabase()
+            Query = "select * from Visual.Users_Table where Username = '" & Username & "' AND Password = '" & Password & "' "
             Command = New MySqlCommand(Query, Connection)
             Reader = Command.ExecuteReader
             While Reader.Read
@@ -55,12 +55,44 @@ Public Class Utilities
         End Try
         Return Success
     End Function
-    Function RegisterUser(ByVal firstName As String, ByVal SeconName As String, ByVal Username As String, ByVal Password As String) As Boolean
+    Public Function RegisterUser(ByVal firstName As String, ByVal SecondName As String, ByVal Username As String, ByVal Password As String) As Boolean
+        Dim Success As Boolean
+        Dim Query As String
         Try
-
+            ConnectToDatabase()
+            Query = "insert into Visual.Users_Table(FirstName,SecondName,Username,Password) values('" & firstName & "', '" & SecondName & "','" & Username & "','" & Password & "')"
+            Command = New MySqlCommand(Query, Connection)
+            Reader = Command.ExecuteReader
+            MessageBox.Show("User Added Success, Login With Credentials To Continue")
+            Success = True
         Catch ex As Exception
-
+            MessageBox.Show("Error Processing Request, Please Try Again " + ex.Message)
+            Success = False
+        Finally
+            CloseConnection()
         End Try
-        Return True
+        Return Success
+    End Function
+    Public Function checkIfUserNameExist(ByVal Username As String) As Boolean
+        Dim Found As Boolean = True
+        Dim Query As String
+        Try
+            ConnectToDatabase()
+            Query = "select * from Visual.Users_Table Where Username = '" & Username & "'"
+            Command = New MySqlCommand(Query, Connection)
+            Reader = Command.ExecuteReader
+            While Reader.Read
+                Counter = Counter + 1
+            End While
+            If Counter = 1 Then
+                Found = True
+            Else
+                Found = False
+            End If
+        Catch ex As Exception
+        Finally
+            CloseConnection()
+        End Try
+        Return Found
     End Function
 End Class
