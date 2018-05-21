@@ -85,6 +85,7 @@
     <Compile Include="Booking.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Controller\MapsController.vb" />
     <Compile Include="Form1.vb">
       <SubType>Form</SubType>
     </Compile>
