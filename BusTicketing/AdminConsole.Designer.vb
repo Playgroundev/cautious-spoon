@@ -50,7 +50,7 @@ Partial Class AdminConsole
         Me.SplitContainer1.Location = New System.Drawing.Point(12, 50)
         Me.SplitContainer1.Name = "SplitContainer1"
         Me.SplitContainer1.Size = New System.Drawing.Size(760, 472)
-        Me.SplitContainer1.SplitterDistance = 294
+        Me.SplitContainer1.SplitterDistance = 384
         Me.SplitContainer1.TabIndex = 3
         '
         'AdminConsole

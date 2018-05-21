@@ -63,7 +63,7 @@ Public Class Utilities
             Query = "insert into Visual.Users_Table(FirstName,SecondName,Username,Password) values('" & firstName & "', '" & SecondName & "','" & Username & "','" & Password & "')"
             Command = New MySqlCommand(Query, Connection)
             Reader = Command.ExecuteReader
-            MessageBox.Show("User Added Success, Login With Credentials To Continue")
+            'MessageBox.Show("User Added Success, Login With Credentials To Continue")
             Success = True
         Catch ex As Exception
             MessageBox.Show("Error Processing Request, Please Try Again " + ex.Message)

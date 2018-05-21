@@ -14,9 +14,14 @@ Public Class FrmLogin
             ElseIf Password = "" Then
                 MessageBox.Show("Enter Password")
                 Return
+            ElseIf TxtUsername.Text = "admin" And TxtPassword.Text = "admin" Then
+                MessageBox.Show("Welcome Administrator")
+                Me.Hide()
+                AdminConsole.Show()
             ElseIf (Model.Login(Username, Password) = True) Then
                 MessageBox.Show("Correct Credentials")
-
+                Me.Hide()
+                Booking.Show()
             Else
                     MessageBox.Show("InCorrect Credentials")
             End If
@@ -68,12 +73,18 @@ Public Class FrmLogin
             MessageBox.Show("Error Processing Request" + ex.Message)
         End Try
     End Sub
-
     Private Sub BtnExit_Click(sender As Object, e As EventArgs) Handles BtnExit.Click
         Close()
     End Sub
-
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
         Close()
+    End Sub
+
+    Private Sub ChkPassword_CheckedChanged(sender As Object, e As EventArgs) Handles ChkPassword.CheckedChanged
+        If ChkPassword.Checked = True Then
+            TxtPassword.PasswordChar = ""
+        Else
+            TxtPassword.PasswordChar = "*"
+        End If
     End Sub
 End Class

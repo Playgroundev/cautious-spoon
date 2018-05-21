@@ -137,6 +137,26 @@
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
     <None Include="App.config" />
+    <None Include="visualDataSet.xsc">
+      <DependentUpon>visualDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="visualDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="visualDataSet.xss">
+      <DependentUpon>visualDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="visualDataSet1.xsc">
+      <DependentUpon>visualDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="visualDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="visualDataSet1.xss">
+      <DependentUpon>visualDataSet1.xsd</DependentUpon>
+    </None>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
