@@ -1,9 +1,9 @@
 ﻿Imports MySql.Data.MySqlClient
 Public Class Utilities
-    Dim Connection As MySqlConnection
-    Dim Command As MySqlCommand
-    Dim Reader As MySqlDataReader
-    Dim Counter As Integer = 0
+    Public Connection As MySqlConnection
+    Public Command As MySqlCommand
+    Public Reader As MySqlDataReader
+    Public Counter As Integer = 0
 
     Public Function ConnectToDatabase() As Boolean
         Dim Success As Boolean = False

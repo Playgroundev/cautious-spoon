@@ -202,9 +202,9 @@ Partial Class Booking
         Me.ClientSize = New System.Drawing.Size(628, 507)
         Me.Controls.Add(Me.LblLogged)
         Me.Controls.Add(Me.BtnExit)
-        Me.Controls.Add(Me.BtnConfirm)
         Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.GroupBox1)
+        Me.Controls.Add(Me.BtnConfirm)
         Me.Name = "Booking"
         Me.Text = "Booking"
         Me.GroupBox1.ResumeLayout(False)

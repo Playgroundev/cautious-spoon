@@ -71,6 +71,7 @@ Partial Class Receipt
         '
         'TxtConfirmUsername
         '
+        Me.TxtConfirmUsername.Enabled = False
         Me.TxtConfirmUsername.Location = New System.Drawing.Point(111, 42)
         Me.TxtConfirmUsername.Name = "TxtConfirmUsername"
         Me.TxtConfirmUsername.Size = New System.Drawing.Size(174, 22)
@@ -87,6 +88,7 @@ Partial Class Receipt
         '
         'TxtConfirmFrom
         '
+        Me.TxtConfirmFrom.Enabled = False
         Me.TxtConfirmFrom.Location = New System.Drawing.Point(111, 94)
         Me.TxtConfirmFrom.Name = "TxtConfirmFrom"
         Me.TxtConfirmFrom.Size = New System.Drawing.Size(174, 22)
@@ -103,6 +105,7 @@ Partial Class Receipt
         '
         'TxtConfirmDestination
         '
+        Me.TxtConfirmDestination.Enabled = False
         Me.TxtConfirmDestination.Location = New System.Drawing.Point(111, 148)
         Me.TxtConfirmDestination.Name = "TxtConfirmDestination"
         Me.TxtConfirmDestination.Size = New System.Drawing.Size(174, 22)
@@ -119,6 +122,7 @@ Partial Class Receipt
         '
         'TxtPrice
         '
+        Me.TxtPrice.Enabled = False
         Me.TxtPrice.Location = New System.Drawing.Point(111, 196)
         Me.TxtPrice.Name = "TxtPrice"
         Me.TxtPrice.Size = New System.Drawing.Size(102, 22)
@@ -158,6 +162,7 @@ Partial Class Receipt
         '
         'TxtDepatureTime
         '
+        Me.TxtDepatureTime.Enabled = False
         Me.TxtDepatureTime.Location = New System.Drawing.Point(111, 244)
         Me.TxtDepatureTime.Name = "TxtDepatureTime"
         Me.TxtDepatureTime.Size = New System.Drawing.Size(102, 22)

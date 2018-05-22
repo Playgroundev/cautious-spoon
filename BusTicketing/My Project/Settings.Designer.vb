@@ -64,6 +64,16 @@ Namespace My
                 Return CType(Me("visualConnectionString"),String)
             End Get
         End Property
+        
+        <Global.System.Configuration.ApplicationScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.SpecialSettingAttribute(Global.System.Configuration.SpecialSetting.ConnectionString),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("server=localhost;user id=root;persistsecurityinfo=True;database=world")>  _
+        Public ReadOnly Property worldConnectionString() As String
+            Get
+                Return CType(Me("worldConnectionString"),String)
+            End Get
+        End Property
     End Class
 End Namespace
 
