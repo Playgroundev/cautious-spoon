@@ -95,4 +95,7 @@ Public Class Utilities
         End Try
         Return Found
     End Function
+    Public Function Search()
+        Return Nothing
+    End Function
 End Class

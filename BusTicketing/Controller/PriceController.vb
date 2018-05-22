@@ -1,5 +1,4 @@
 ﻿Public Class PriceController
-
     Public Function GeneratePrice() As Integer
         Dim RandomPrice As Integer
         Try

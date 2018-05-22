@@ -264,8 +264,9 @@ Partial Class FrmLogin
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(375, 320)
+        Me.ClientSize = New System.Drawing.Size(392, 321)
         Me.Controls.Add(Me.TabLogin)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "FrmLogin"
         Me.Text = "Bus Ticketing"
         Me.TabLogin.ResumeLayout(False)

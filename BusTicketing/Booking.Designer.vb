@@ -22,6 +22,7 @@ Partial Class Booking
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Booking))
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.BtnBook = New System.Windows.Forms.Button()
         Me.CmbDepature = New System.Windows.Forms.ComboBox()
@@ -30,12 +31,12 @@ Partial Class Booking
         Me.Label3 = New System.Windows.Forms.Label()
         Me.TxtDestination = New System.Windows.Forms.TextBox()
         Me.Label2 = New System.Windows.Forms.Label()
+        Me.TxtFrom = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
         Me.WebMaps = New System.Windows.Forms.WebBrowser()
         Me.BtnConfirm = New System.Windows.Forms.Button()
         Me.BtnExit = New System.Windows.Forms.Button()
-        Me.TxtFrom = New System.Windows.Forms.TextBox()
         Me.LblLogged = New System.Windows.Forms.Label()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
@@ -126,6 +127,14 @@ Partial Class Booking
         Me.Label2.TabIndex = 2
         Me.Label2.Text = "Destination"
         '
+        'TxtFrom
+        '
+        Me.TxtFrom.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TxtFrom.Location = New System.Drawing.Point(71, 25)
+        Me.TxtFrom.Name = "TxtFrom"
+        Me.TxtFrom.Size = New System.Drawing.Size(180, 26)
+        Me.TxtFrom.TabIndex = 1
+        '
         'Label1
         '
         Me.Label1.AutoSize = True
@@ -178,14 +187,6 @@ Partial Class Booking
         Me.BtnExit.Text = "EXIT"
         Me.BtnExit.UseVisualStyleBackColor = False
         '
-        'TxtFrom
-        '
-        Me.TxtFrom.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TxtFrom.Location = New System.Drawing.Point(71, 25)
-        Me.TxtFrom.Name = "TxtFrom"
-        Me.TxtFrom.Size = New System.Drawing.Size(180, 26)
-        Me.TxtFrom.TabIndex = 1
-        '
         'LblLogged
         '
         Me.LblLogged.AutoSize = True
@@ -205,6 +206,7 @@ Partial Class Booking
         Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.BtnConfirm)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "Booking"
         Me.Text = "Booking"
         Me.GroupBox1.ResumeLayout(False)

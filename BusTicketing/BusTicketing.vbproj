@@ -179,6 +179,16 @@
     <None Include="visualDataSet2.xss">
       <DependentUpon>visualDataSet2.xsd</DependentUpon>
     </None>
+    <None Include="worldDataSet.xsc">
+      <DependentUpon>worldDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="worldDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="worldDataSet.xss">
+      <DependentUpon>worldDataSet.xsd</DependentUpon>
+    </None>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
