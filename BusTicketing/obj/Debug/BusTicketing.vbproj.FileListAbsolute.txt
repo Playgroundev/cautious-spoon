@@ -13,3 +13,4 @@ C:\Users\USER\Documents\Visual Studio 2015\Projects\BusTicketing\BusTicketing\bi
 C:\Users\USER\Documents\Visual Studio 2015\Projects\BusTicketing\BusTicketing\bin\Debug\MySql.Data.xml
 C:\Users\USER\Documents\Visual Studio 2015\Projects\BusTicketing\BusTicketing\obj\Debug\BusTicketing.AdminConsole.resources
 C:\Users\USER\Documents\Visual Studio 2015\Projects\BusTicketing\BusTicketing\obj\Debug\BusTicketing.Booking.resources
+C:\Users\USER\Documents\Visual Studio 2015\Projects\BusTicketing\BusTicketing\obj\Debug\BusTicketing.Receipt.resources

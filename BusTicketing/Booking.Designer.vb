@@ -23,19 +23,20 @@ Partial Class Booking
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.BtnBook = New System.Windows.Forms.Button()
         Me.CmbDepature = New System.Windows.Forms.ComboBox()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.DateTimePicker1 = New System.Windows.Forms.DateTimePicker()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.TxtDestination = New System.Windows.Forms.TextBox()
         Me.Label2 = New System.Windows.Forms.Label()
-        Me.TxtFrom = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
         Me.WebMaps = New System.Windows.Forms.WebBrowser()
-        Me.BtnBook = New System.Windows.Forms.Button()
         Me.BtnConfirm = New System.Windows.Forms.Button()
         Me.BtnExit = New System.Windows.Forms.Button()
+        Me.TxtFrom = New System.Windows.Forms.TextBox()
+        Me.LblLogged = New System.Windows.Forms.Label()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
         Me.SuspendLayout()
@@ -52,12 +53,24 @@ Partial Class Booking
         Me.GroupBox1.Controls.Add(Me.TxtFrom)
         Me.GroupBox1.Controls.Add(Me.Label1)
         Me.GroupBox1.Font = New System.Drawing.Font("Ubuntu", 9.749999!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.GroupBox1.Location = New System.Drawing.Point(12, 13)
+        Me.GroupBox1.Location = New System.Drawing.Point(12, 12)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(606, 159)
+        Me.GroupBox1.Size = New System.Drawing.Size(606, 160)
         Me.GroupBox1.TabIndex = 0
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Navigator"
+        '
+        'BtnBook
+        '
+        Me.BtnBook.BackColor = System.Drawing.SystemColors.MenuHighlight
+        Me.BtnBook.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.BtnBook.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BtnBook.Location = New System.Drawing.Point(224, 127)
+        Me.BtnBook.Name = "BtnBook"
+        Me.BtnBook.Size = New System.Drawing.Size(125, 23)
+        Me.BtnBook.TabIndex = 8
+        Me.BtnBook.Text = "BOOK"
+        Me.BtnBook.UseVisualStyleBackColor = False
         '
         'CmbDepature
         '
@@ -113,14 +126,6 @@ Partial Class Booking
         Me.Label2.TabIndex = 2
         Me.Label2.Text = "Destination"
         '
-        'TxtFrom
-        '
-        Me.TxtFrom.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TxtFrom.Location = New System.Drawing.Point(71, 25)
-        Me.TxtFrom.Name = "TxtFrom"
-        Me.TxtFrom.Size = New System.Drawing.Size(180, 26)
-        Me.TxtFrom.TabIndex = 1
-        '
         'Label1
         '
         Me.Label1.AutoSize = True
@@ -151,18 +156,6 @@ Partial Class Booking
         Me.WebMaps.Size = New System.Drawing.Size(599, 247)
         Me.WebMaps.TabIndex = 0
         '
-        'BtnBook
-        '
-        Me.BtnBook.BackColor = System.Drawing.SystemColors.MenuHighlight
-        Me.BtnBook.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.BtnBook.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BtnBook.Location = New System.Drawing.Point(224, 127)
-        Me.BtnBook.Name = "BtnBook"
-        Me.BtnBook.Size = New System.Drawing.Size(125, 23)
-        Me.BtnBook.TabIndex = 8
-        Me.BtnBook.Text = "BOOK"
-        Me.BtnBook.UseVisualStyleBackColor = False
-        '
         'BtnConfirm
         '
         Me.BtnConfirm.BackColor = System.Drawing.SystemColors.MenuHighlight
@@ -185,11 +178,29 @@ Partial Class Booking
         Me.BtnExit.Text = "EXIT"
         Me.BtnExit.UseVisualStyleBackColor = False
         '
+        'TxtFrom
+        '
+        Me.TxtFrom.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TxtFrom.Location = New System.Drawing.Point(71, 25)
+        Me.TxtFrom.Name = "TxtFrom"
+        Me.TxtFrom.Size = New System.Drawing.Size(180, 26)
+        Me.TxtFrom.TabIndex = 1
+        '
+        'LblLogged
+        '
+        Me.LblLogged.AutoSize = True
+        Me.LblLogged.ForeColor = System.Drawing.SystemColors.HotTrack
+        Me.LblLogged.Location = New System.Drawing.Point(13, 453)
+        Me.LblLogged.Name = "LblLogged"
+        Me.LblLogged.Size = New System.Drawing.Size(0, 13)
+        Me.LblLogged.TabIndex = 4
+        '
         'Booking
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(628, 507)
+        Me.Controls.Add(Me.LblLogged)
         Me.Controls.Add(Me.BtnExit)
         Me.Controls.Add(Me.BtnConfirm)
         Me.Controls.Add(Me.GroupBox2)
@@ -200,13 +211,13 @@ Partial Class Booking
         Me.GroupBox1.PerformLayout()
         Me.GroupBox2.ResumeLayout(False)
         Me.ResumeLayout(False)
+        Me.PerformLayout()
 
     End Sub
 
     Friend WithEvents GroupBox1 As GroupBox
     Friend WithEvents TxtDestination As TextBox
     Friend WithEvents Label2 As Label
-    Friend WithEvents TxtFrom As TextBox
     Friend WithEvents Label1 As Label
     Friend WithEvents GroupBox2 As GroupBox
     Friend WithEvents WebMaps As WebBrowser
@@ -217,4 +228,6 @@ Partial Class Booking
     Friend WithEvents BtnBook As Button
     Friend WithEvents BtnConfirm As Button
     Friend WithEvents BtnExit As Button
+    Friend WithEvents TxtFrom As TextBox
+    Friend WithEvents LblLogged As Label
 End Class
