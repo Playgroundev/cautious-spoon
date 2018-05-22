@@ -14,3 +14,4 @@ C:\Users\USER\Documents\Visual Studio 2015\Projects\BusTicketing\BusTicketing\bi
 C:\Users\USER\Documents\Visual Studio 2015\Projects\BusTicketing\BusTicketing\obj\Debug\BusTicketing.AdminConsole.resources
 C:\Users\USER\Documents\Visual Studio 2015\Projects\BusTicketing\BusTicketing\obj\Debug\BusTicketing.Booking.resources
 C:\Users\USER\Documents\Visual Studio 2015\Projects\BusTicketing\BusTicketing\obj\Debug\BusTicketing.Receipt.resources
+C:\Users\USER\Documents\Visual Studio 2015\Projects\BusTicketing\BusTicketing\obj\Debug\BusTicketing.BookingHistory.resources

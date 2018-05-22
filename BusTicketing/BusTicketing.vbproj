@@ -85,6 +85,12 @@
     <Compile Include="Booking.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="BookingHistory.Designer.vb">
+      <DependentUpon>BookingHistory.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BookingHistory.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Controller\MapsController.vb" />
     <Compile Include="Controller\PriceController.vb" />
     <Compile Include="Form1.vb">
@@ -124,6 +130,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Booking.resx">
       <DependentUpon>Booking.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BookingHistory.resx">
+      <DependentUpon>BookingHistory.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.vb</DependentUpon>

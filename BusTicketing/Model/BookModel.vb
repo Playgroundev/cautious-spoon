@@ -65,4 +65,32 @@ Public Class BookModel
         End Try
         Return Nothing
     End Function
+    Public Function PopulateHistory(ByVal GridTable As DataGridView, ByVal Username As String)
+        Dim adapter As New MySqlDataAdapter
+        Dim dataSet As New DataTable
+        Dim bSource As New BindingSource
+        Command = New MySqlCommand
+
+        Dim Query As String
+        Try
+            ConnectToDatabase()
+            Query = "select * from Visual.Users_Table where Username = '" & Username & "'"
+            Command = New MySqlCommand(Query, Connection)
+            Reader = Command.ExecuteReader
+            If Reader.Read Then
+                adapter.SelectCommand = Command
+                adapter.Fill(dataSet)
+                bSource.DataSource = dataSet
+                GridTable.DataSource = bSource
+                adapter.Update(dataSet)
+            Else
+                MessageBox.Show("No Records Found")
+            End If
+        Catch ex As Exception
+            MessageBox.Show("Error Rendering History")
+        Finally
+            CloseConnection()
+        End Try
+        Return Nothing
+    End Function
 End Class
